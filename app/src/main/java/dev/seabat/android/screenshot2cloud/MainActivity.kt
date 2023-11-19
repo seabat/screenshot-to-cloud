@@ -8,6 +8,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import dev.seabat.android.screenshot2cloud.ui.compose.Screenshot2CloudApp
+import dev.seabat.android.screenshot2cloud.ui.compose.SetStatusBarColor
 import dev.seabat.android.screenshot2cloud.ui.theme.ScreenshotToCloudTheme
 
 class MainActivity : ComponentActivity() {
@@ -15,6 +16,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ScreenshotToCloudTheme {
+                SetStatusBarColor()
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
